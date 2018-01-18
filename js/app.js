@@ -1,43 +1,46 @@
 
   //Traer elementos del HTML
-  
-  
+  var $nameImput = $('#name-imput');
+  var $phoneImput =$('#phone-input');
+
   var loadPage = function () {
-    
-  };
+    $('.modal').modal();
+    $nameImput.keyup(validateContact);
+    $phoneImput.keyup(validateContact);
+  }
 
   var paintContactsInHTML = function(contact) {
-   
+
     /* Crear elementos con DOM html al publicar contacto */
-     
-    
+
+
     //Asignando atributos y/o eventos
-    
+
 
     /* Asignando valores a los elementos*/
-    
+
 
     //Agregamos lo que creamos con el DOM a un elemento existente del HTML
-    
+
   };
 
   var addContact = function (e) {
     e.preventDefault();
     //Las siguientes lineas toman el valor que el usuario agrega en los inputs y los guardan en variables
-    
+
 
     //Con las variables separadas que obtuvimos creamos una estructura de datos unica, un objeto por cada contacto
-    
+
 
     /*Agregamos el contacto a nuestra data (arreglo declarado) para poderla filtrar y eliminar posteriormente*/
-    
+
     //La siguiente funcion se encarga de pintar los contactos en el html
-    
+
     /* Limpiando valores de formulario*/
-    
+
   };
 
-  
+
 
 
   var validateContact = function () {
